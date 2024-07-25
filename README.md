@@ -1,81 +1,63 @@
-# tripmanager
+# TripPlanner - Travel Booking Website
 
-```markdown
-# TripPlanner
+<img src="images/home-page.png" alt="TripPlanner" width="500" height="300">
 
-TripPlanner is a full-stack travel booking website built with PHP, HTML, CSS, JavaScript, and MySQL. It provides users with the ability to book travel packages, manage their profiles, and perform various other actions. Admin users have enhanced privileges to manage the site, including package creation and user interaction.
+
+TripPlanner is a full stack travel booking website built using PHP, HTML, CSS, JavaScript, and MySQL. It allows users to book travel packages, create accounts, manage their profiles, reset passwords, ask questions, and more. Admin users have additional privileges to manage packages, view data, and interact with users.
 
 ## Features
 
-### User Registration and Authentication
-- Account Creation: Users can sign up to create new accounts.
-- Login/Logout: Secure login and logout functionality.
-- Password Reset: Users can reset their passwords if forgotten.
-
-### Travel Package Booking
-- Browse Packages: View available travel packages.
-- Book Packages: Book your desired travel packages.
-
-### User Dashboard
-- Profile Management: Update profile information.
-- Booking History: View past bookings and manage account details.
-
-### Admin Panel
-- Admin Login: Special access for administrators to manage the site.
-- Package Management: Create, edit, and delete travel packages.
-- Data Management: View user data, manage inquiries, and respond to user questions.
-
-### Interactive User Interface
-- Responsive Design: User-friendly design with responsive layouts for various devices.
-
-### Database Management
-- MySQL Database: Utilizes MySQL to store user data, bookings, packages, and inquiries.
-
+- User Registration and Authentication:
+  - Users can create accounts, log in, and log out.
+  - Password reset functionality for forgotten passwords.
+  
+- Travel Package Booking:
+  - Users can browse and book various travel packages.
+  
+- User Dashboard:
+  - Users can update their profiles, view booking history, and manage account details.
+  
+- Admin Panel:
+  - Admin users can log in to manage the website.
+  - Admins can create, edit, and delete travel packages.
+  - Admins can view user data, manage inquiries, and respond to user questions.
+  
+- Interactive User Interface:
+  - User-friendly design with responsive layouts.
+  
+- Database Management:
+  - MySQL database used to store user data, bookings, packages, and inquiries.
+  
 ## Getting Started
 
-To get started with TripPlanner, follow these steps:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Mo-Shakib/CSE471-Project.git
+   cd CSE471-Project
 
-### 1. Clone the Repository
+2. **Database Setup:**
+- Create a MySQL database named tripplanner.
+- Import the tripplanner.sql file from the project's database directory to set up the database schema and initial data.
 
-```bash
-git clone https://github.com/eresdesre/tripmanager
-cd tripmanager
-```
+3. **Configuration:**
+- Update config.php with your database connection details.
 
-### 2. Database Setup
-
-- Create a MySQL Database**: Name the database `tripplanner`.
-- Import the Database Schema: Use the `database.sql` file to set up the database schema and initial data.
-
-```bash
-mysql -u yourusername -p tripplanner < database/tripplanner.sql
-```
-
-### 3. Configuration
-
-- Update Configuration: Open `includes/config.php` and update it with your database connection details.
-
-### 4. Run the Project
-
-- Start a Local Development Server: You can use PHP's built-in server or a local server environment like XAMPP or MAMP.
-  
-  ```bash
-  php -S localhost:8000
-  ```
-
-- Access the Application**: Open your browser and go to `http://localhost:8000/` to view the site.
+4. **Run the Project:**
+Start a local development server (e.g., using PHP's built-in server).
+Access the website in your browser: http://localhost:port/CSE471-Project.
 
 ## Usage
 
-- For Users:
-  - Register a new account or log in if you already have one.
-  - Browse and book travel packages.
-  - Update your profile and manage bookings.
+- Register a user account or log in if you have one.
+- Browse available travel packages and book your desired one.
+- Update your profile information and manage your bookings.
+- For admin access, navigate to the admin login page.
+- Manage travel packages, view user data, and respond to inquiries in the admin panel.
 
-- For Admins:
-  - Navigate to the admin login page to access the admin panel.
-  - Manage travel packages, view user data, and handle inquiries.
 
-## Contributing
+Contributors:
+- [@Rageeb Md Ridwan](https://github.com/Rageeb-Md-Ridwan)
+- [@IBNAT TASNIM KHAN](https://github.com/parsa57)
+- [@Mohammad Shakib](https://github.com/Mo-Shakib)
 
-If you want to contribute to TripPlanner, fork the site and add new features...
+_NB: This project was developed as part of the CSE471: System Design course at **BRAC University**._
